@@ -6,7 +6,7 @@ if [ $USERID -ne 0 ]
 then
     echo "please shift to the root user"
     #$(su)
-    #exit 1
+    exit 1 # manually exiting the error stopping the codde
 else 
     echo "You are in the root access"
 fi
@@ -14,9 +14,10 @@ dnf install mysql -y
 
 
 
-if [ $? -eq 0 ]
+if [ $? -ne 0 ]
 then 
-    echo "Mysql is done success"
-else 
     echo "mysql installation is unsuccess"
+    exit 1 # manually exiting the error stopping the codde
+else 
+    echo "Mysql is done success"
 fi
