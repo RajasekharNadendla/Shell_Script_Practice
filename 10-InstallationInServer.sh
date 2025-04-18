@@ -10,10 +10,7 @@ then
 else 
     echo "You are in the root access"
 fi
-
-password="DevOps321"
-echo "$password" | sudo -su
-echo "$password" | dnf install mysqld -y
+dnf install mysql -y
 
 
 
