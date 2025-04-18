@@ -2,7 +2,8 @@
 
 USERID=$(id -u)
 
-if [ $USERID -ne 0] then
+if [ $USERID -ne 0 ]
+then
     echo "please shift to the root user"
 else 
     echo "You are in the root access"
