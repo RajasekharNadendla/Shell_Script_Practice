@@ -10,9 +10,12 @@ then
 else 
     echo "You are in the root access"
 fi
-sudo -su
-read -s
-dnf install mysqld -y
+
+password="DevOps321"
+echo "$password" | sudo -su
+echo "$password" | dnf install mysqld -y
+
+
 
 if [ $? -eq 0 ]
 then 
