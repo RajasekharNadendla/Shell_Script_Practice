@@ -6,11 +6,12 @@ if [ $USERID -ne 0 ]
 then
     echo "please shift to the root user"
     #$(su)
-    exit 1
+    #exit 1
 else 
     echo "You are in the root access"
 fi
-
+sudo -su
+read -s
 dnf install mysqld -y
 
 if [ $? -eq 0 ]
