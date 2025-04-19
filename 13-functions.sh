@@ -19,8 +19,7 @@ validate(){
     fi
 }
 
-$(pwd) &>>logfile
-validate $? "checking the current working directory"
-
-$(hjebchue) &>>logfile
-validate $? "Checking the List command"
+for i in {1..10}
+do
+    validate $i -gt 5 "checking the value"
+done
