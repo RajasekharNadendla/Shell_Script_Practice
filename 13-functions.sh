@@ -19,9 +19,8 @@ validate(){
     fi
 }
 
-
-pwd &>>logfile
+$(pwd) &>>logfile
 validate $? "checking the current working directory"
 
-hjebchue &>>logfile
+$(hjebchue) &>>logfile
 validate $? "Checking the List command"
