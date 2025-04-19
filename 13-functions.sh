@@ -21,5 +21,5 @@ validate(){
 
 for i in {1..10}
 do
-    validate $i -gt 5 "checking the value"
+    validate ($i -gt 5) "checking the value"
 done
