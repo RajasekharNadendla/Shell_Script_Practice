@@ -23,5 +23,5 @@ validate(){
 pwd &>>logfile
 validate $? "checking the current working directory"
 
-sl -sa &>>logfile
+hjebchue &>>logfile
 validate $? "Checking the List command"
