@@ -15,7 +15,7 @@ validate(){
         echo -e "$2 is .. $R failed $N"
         exit 1
     else
-        echo -e "$2 is .. $R Success $N"
+        echo -e "$2 is .. $G Success $N"
     fi
 }
 
