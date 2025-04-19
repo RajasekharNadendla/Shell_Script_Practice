@@ -10,16 +10,15 @@ G="\e[32m"
 N="\e[0m"
 Y="\e[33m"
 validate(){
-    if [ $1 -ne 0]
+    if [ $1 -gt $2 ]
     then
-        echo -e "$2 is .. $R failed $N"
-        exit 1
+        echo -e "$1 is .. $R less than $2 $N"
     else
-        echo -e "$2 is .. $G Success $N"
+        echo -e "$1 is .. $G greater than $2 $N"
     fi
 }
 
 for i in {1..10}
 do
-    validate ($i -gt 5) "checking the value"
+    validate $i 5
 done
