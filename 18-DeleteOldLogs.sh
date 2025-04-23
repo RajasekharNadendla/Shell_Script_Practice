@@ -10,7 +10,7 @@ else
     exit 1
 fi
 
-files=find $Directory -name "*.log" -mtime +14
+files=$(find $Directory -name "*.log" -mtime +14)
 
 while IFS= read -r line
 do
