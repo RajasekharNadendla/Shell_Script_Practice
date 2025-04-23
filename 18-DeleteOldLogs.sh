@@ -4,9 +4,9 @@ Directory=/tmp/App-logs
 
 if [ -d $Directory -eq 0 ]
 then
-    echo "Directory $Directory exists"
+    echo " $Directory exists"
 else 
-    echo "Directory $Directory does not exists; please create the directory first"
+    echo " $Directory does not exists; please create the directory first"
     exit 1
 fi
 
