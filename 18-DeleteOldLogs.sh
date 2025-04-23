@@ -2,7 +2,7 @@
 
 Directory=/tmp/App-logs
 
-if [ -d $Directory -eq 0 ]
+if [ -d $Directory  ]
 then
     echo " $Directory exists"
 else 
