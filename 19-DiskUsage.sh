@@ -10,6 +10,8 @@ do
     folder=$(echo $line | awk -F " " '{print NF}')
     if [ $usage -ge $Disk_Threshhold ]
     then
+        echo "folder usage id :$usage"
+        echo "folder is :$folder"
         Message+="$folder use $usage which is greater than threshhold limit $Disk_Threshhold \n"
     fi  
 done <<< $Disk_Files
