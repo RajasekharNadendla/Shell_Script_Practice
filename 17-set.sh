@@ -25,4 +25,4 @@ else
 fi
 
 dnf install nginx -y #correct syntax
-dnf install giit -y # wrong command
+dnf install giit -y # wrong command1
