@@ -15,4 +15,4 @@ do
 done <<< $Disk_Files
 
 echo -e "Message : $Message"
-echo -e "$Message" | mail -s "disk usage alert" ramdevops150503@gmail.com
+echo -e "$Message" | mail -s "disk usage alert" rajasekhar15052003@gmail.com
